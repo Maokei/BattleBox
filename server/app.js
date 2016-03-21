@@ -1,19 +1,16 @@
 /**
- * @author maokei
- * @description Game server
+ * @author Rickard Johansson - maokei
+ * @description 
  * */
 
 
 var http = require('http');
-var path = require('path');
-var port = 7777;
+var router = require('./router.js');
+var port = process.env.PORT | 7777;
 
 //serv up client
 var server = http.createServer(function(req, res) {
-    console.log('we got request');
-    res.writeHead(200, {'Content-type':'text/html'});
-    res.write("<p>Battlebox test</p>");
-    res.end();
+    router.home(req, res);
 });
 
 server.listen(port, function() {
