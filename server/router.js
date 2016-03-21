@@ -4,12 +4,16 @@
  * */
 
 //imports
+var url = require('url');
 var render = require('./render.js');
-
 var header = {'Content-Type':'text/html'};
 
 //handle route for home/index GET and POST
 function home(req, res) {
+    var request = url.parse(req.url, true);
+    var action = request.patname;
+    console.log("url: " + req.url);
+    console.log("action " + action);
     if(req.url === '/') {
         if(req.method.toLowerCase()  === "get") {
             res.writeHead(200, header);
