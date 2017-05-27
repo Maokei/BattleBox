@@ -1,0 +1,19 @@
+{
+  "name": "battlebox",
+  "version": "1.0.0",
+  "description": "html5 strategy game websocket",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maokei/BattleBox.git"
+  },
+  "author": "maokei xenosys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maokei/BattleBox/issues"
+  },
+  "homepage": "https://github.com/Maokei/BattleBox#readme"
+}
