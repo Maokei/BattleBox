@@ -7,7 +7,18 @@
   <version>1.0-SNAPSHOT</version>
   <name>bbserver</name>
   <url>http://maven.apache.org</url>
+  <version>3.5.0</version>
+
+  <properties>
+
+  </properties>
+
   <dependencies>
+    <dependency>
+	<groupId>io.vertx</grouId>
+	<artifactId>vertx-core</artifactId>
+	<version>${project.version}</version>	
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
