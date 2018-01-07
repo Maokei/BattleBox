@@ -3,6 +3,7 @@ package se.maokei.battlebox;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.json.JsonObject;
+import se.maokei.battlebox.constants.Constants;
 
 /**
  * 
@@ -23,7 +24,7 @@ public class App extends AbstractVerticle
               req.response()
                 .putHeader("content-type", "text/plain")
                 .end("Hello from Vert.x!");
-            }).listen(8080);
+            }).listen(Constants.DEFAULT_PORT);
         System.out.println("HTTP server started on port 8080");
 	}
 }
