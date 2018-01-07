@@ -11,10 +11,10 @@ import se.maokei.battlebox.constants.Constants;
  */
 public class App extends AbstractVerticle 
 {
-    /*public static void main( String[] args )
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
-    }*/
+        
+    }
     
     @Override
 	public void start() {
@@ -25,6 +25,6 @@ public class App extends AbstractVerticle
                 .putHeader("content-type", "text/plain")
                 .end("Hello from Vert.x!");
             }).listen(Constants.DEFAULT_PORT);
-        System.out.println("HTTP server started on port 8080");
+        System.out.println("HTTP server started on port " + Constants.DEFAULT_PORT);
 	}
 }
